@@ -1,0 +1,69 @@
+/* overlay background */
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+.upload-property-form{
+display: flex;
+
+}
+
+.input-fields-btns {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.custom-modal {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+ height: 75vh;
+  max-width: 700px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 20px;
+  outline: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.add-property-btn {
+
+  color:  #1e1e46;
+  padding: 10px 20px;
+ 
+margin-top: -30px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-left:-20px ;
+  transition: ease-in-out 0.4s;
+}
+.add-property-btn:hover {
+  background-color: #1e1e46;
+  color: #f0f0f0;
+
+}
+/* Add your input/button styles */
+.custom-modal input {
+  width: 50%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.custom-modal button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  background-color: #1e1e46;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.custom-modal button:last-child {
+  background-color: #ccc;
+  color: #333;
+}

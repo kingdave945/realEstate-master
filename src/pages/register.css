@@ -1,0 +1,161 @@
+.sign {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+align-items: center;
+  overflow: hidden;
+ 
+}
+
+.sign::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/real-estate-6688945.jpg") center/cover no-repeat;
+  opacity: 0.7; /* Adjust this value for desired opacity */
+  z-index: 0;
+}
+
+.signup {
+  margin-top: -50px;
+  position: relative;
+  bottom: 0px;
+  width: 30%;
+  max-width: 700px;
+  padding: 1.7rem;
+  opacity: 0.8;
+  background:#f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  flex-direction:column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  height: 70vh;
+
+}
+input::placeholder{
+  color: #457b9d;
+}
+@media (max-width: 700px) {
+  .signup {
+     max-width: 300px;
+  }
+}
+
+.signup h2 {
+    margin-top:-15px ;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+.signup p {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.signup form {
+  width: 100%;
+    margin-top:-1px ;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+}
+
+.signup label {
+  display: block;
+
+  color: #457b9d;
+  font-weight: 500;
+}
+.signup select{
+   width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7fafcf0;
+  transition: border 0.2s; 
+    outline: none;
+}
+.signup input[type="text"],
+.signup input[type="password"] {
+  width: 96%;
+ padding: 0.3rem;
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  font-size: 1rem;
+    color: #457b9d;
+  background: #f7fafcf0;
+  transition: border 0.2s;
+ 
+}
+.signup
+ .fullName-input,
+ .email-input,
+ select{
+  margin-bottom: 0.5rem;
+}
+.signup .email-input{
+   width: 96%;
+ padding: 0.3rem;
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7fafcf0;
+  transition: border 0.2s; 
+
+}
+.signup input:focus {
+  border-color: #457b9d;
+  outline: none;
+}
+.signup select:focus {
+  border-color: #457b9d;
+  outline: none;
+}
+
+.signup button[type="submit"] {
+  background: #457b9d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.5rem;
+  
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.signup button[type="submit"]:hover {
+  background: #1d3557;
+}
+.password-input{
+  display: flex;align-items: center;
+    width: 98%;
+ padding: 0.1rem;
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7fafcf0;
+  transition: border 0.2s;
+    margin-bottom: 010px;
+}
+#password-input{
+  border: 0;
+  background: transparent;
+
+}
+.password-input p{
+  margin: 0;
+  
+}
+.bi-eye,
+.bi-eye-slash
+{
+  color: #457b9d;
+  font-size: 1.5rem;
+}

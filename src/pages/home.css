@@ -1,0 +1,108 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.home-header {
+  color: #2d3e50;         
+  background-color: white;
+  display: flex;
+
+  
+}
+.home-header a {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #2d3e50;
+  
+  text-decoration: none;
+  text-align: center;
+}
+.home-header div {
+  width: 100%;
+}
+.home-header div:first-child {
+  font-size: 14px;
+}
+.home-header div:nth-last-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero{
+margin: 80px 0;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #2d3e50;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.section-title {
+  text-align: center;
+
+  font-size: 22px;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  padding: 1rem 0;
+    scrollbar-width: none;
+
+
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+/* 
+.properties::-webkit-scrollbar {
+  height: 8px;
+}
+
+.properties::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.properties::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+
+.why-choose {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.email-link-contact-us{
+  color: #fff;
+  text-decoration: underline;
+}
