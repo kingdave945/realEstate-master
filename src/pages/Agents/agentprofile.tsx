@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getUserDetails } from "../../Api/saveDetails";
 import {toast} from 'react-toastify'
-import '../User/usermain.css';
+
 import { uploadProfilePicture } from "../../Api";
 import { useNavigate } from "react-router-dom";
 import { disableAccount } from "../../Api";
