@@ -1,4 +1,5 @@
-import "./navBarII.css";
+
+import '../pages/navbarII.css'
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import { useState, useEffect } from "react";
