@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import ListCard from "../components/ListCard";
 import SkeletonCard from "../components/SkeletonCard";
-import image from "../assets/licensed-image.jpg";
+
 import { getProperties } from "../Api";
 
 function useQuery() {

@@ -2,9 +2,8 @@ import { useState } from "react";
 import { toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
 import "./login.css";
-import { Link } from "react-router-dom";
+
 import { loginAdmin, loginAgent, loginUser } from "../Api";
-import houseImg from "../assets/licensed-image (1).jpg";
 
 export default function Login() {
   const [role, setRole] = useState("");

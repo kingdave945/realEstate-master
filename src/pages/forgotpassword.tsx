@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { toast } from 'react-toastify';
-import { forgotPassword } from "../Api";
+
 import "./login.css";
 import NavBar from "./navbar";
-import NavBarII from "./navbarII";
+
 import axios from "axios";
 export default function ForgetPassword() {
   const [email, setEmail] = useState("");

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Messages.css";
 import { getMessages } from "../../Api"; 
 import { getUserDetails } from "../../Api/saveDetails";

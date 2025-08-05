@@ -1,7 +1,6 @@
 import "./navBar.css";
 import { Link, useNavigate,  } from "react-router-dom";
-import { useState, useEffect } from "react";
-import api from "../Api/Interceptor";
+
 function NavBar() {
   const navigate = useNavigate();
   const UsToken = sessionStorage.getItem("Ustoken");
@@ -16,39 +15,32 @@ function NavBar() {
     // sessionStorage.removeItem("Agtoken");
     navigate("/");
   };
-const [notificationCount, setNotificationCount] = useState(0);
 
-useEffect(() => {
-  if (AgToken) {
-    // Fetch notifications count
-    const fetchNotifications = async () => {
-      try {
-        const res = await api.get("/api/notifications/count", {
-          headers: { Authorization: `Bearer ${AgToken}` }
-        });
-        setNotificationCount(res.data.count);
-      } catch (err) {
-        console.error("Error fetching notifications:", err);
-      }
-    };
 
-    fetchNotifications();
-    const interval = setInterval(fetchNotifications, 30000); // refresh every 30s
-    return () => clearInterval(interval);
-  }
-}, [AgToken]);
+// useEffect(() => {
+//   if (AgToken) {
+//     // Fetch notifications count
+//     const fetchNotifications = async () => {
+//       try {
+//         const res = await api.get("/api/notifications/count", {
+//           headers: { Authorization: `Bearer ${AgToken}` }
+//         });
+//         setNotificationCount(res.data.count);
+//       } catch (err) {
+//         console.error("Error fetching notifications:", err);
+//       }
+//     };
+
+//     fetchNotifications();
+//     const interval = setInterval(fetchNotifications, 30000); // refresh every 30s
+//     return () => clearInterval(interval);
+//   }
+// }, [AgToken]);
 
   console.log("isLoggedIn", isLoggedIn);
   console.log("UsToken", UsToken);
   console.log("AdToken", AdToken);
   console.log("AgToken", AgToken);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   const token = sessionStorage.getItem("Ustoken");
   const tokenII = sessionStorage.getItem("Agtoken");
 //  if (!token) {

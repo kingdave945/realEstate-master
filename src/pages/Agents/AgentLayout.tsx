@@ -3,11 +3,11 @@ import AgentSidebar from "./AgentSidebar";
 import AgentNav from "./Nav";
 import NavBar from "../navbar";
 import { useEffect, useState } from "react";
-import { getUserDetails } from "../../Api/saveDetails";
+
 import AgentSkeleton from "./AgentSkeleton"; 
 function AgentLayout() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [agent, setAgent] = useState<any>(null);
+
 
   const [sideBar, setSideBar] = useState(false);
   useEffect(() => {

@@ -1,19 +1,18 @@
-import { data } from "react-router-dom";
+
 import api from "./Interceptor";
 //import { loginForm, onboardForm, updateInfo } from "../Types";
-import { getUserDetails, saveUserDetails } from "./saveDetails";
-import axios from "axios";
+import { saveUserDetails } from "./saveDetails";
 
 
 interface formData {
   email: string;
   password: string;
 }
-interface messageform{
-  propertyId: string;
-  content: string;
-    receiverEmail: string;
-}
+// interface messageform{
+//   propertyId: string;
+//   content: string;
+//     receiverEmail: string;
+// }
 interface TwoFA{
   email: string;
   code: string;

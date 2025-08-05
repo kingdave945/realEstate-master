@@ -9,11 +9,11 @@ const sidebarItems = [
   { label: "Listing", icon: "", path: "/agent/listing" },
   { label: "Notifications", icon: "", path: "/agent/notifications" },
 ];
-const secondaryLinks = [
-  { label: "Home", path: "/" },
-  { label: "Services", path: "/" },
-  { label: "Otherlink", path: "#" },
-];
+// const secondaryLinks = [
+//   { label: "Home", path: "/" },
+//   { label: "Services", path: "/" },
+//   { label: "Otherlink", path: "#" },
+// ];
 
 const AgentSidebar: React.FC = () => {
   const [open, setOpen] = useState(false);

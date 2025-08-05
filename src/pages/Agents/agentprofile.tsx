@@ -6,7 +6,7 @@ import { uploadProfilePicture } from "../../Api";
 import { useNavigate } from "react-router-dom";
 import { disableAccount } from "../../Api";
 import NavBar from "../navbar";
-import axios from "axios";
+
 import api from "../../Api/Interceptor";
 export default function AgentProfile() {
   const navigate = useNavigate()

@@ -8,12 +8,12 @@ export default function NavBarII() {
   const AdToken = sessionStorage.getItem("Adtoken");
   const AgToken = sessionStorage.getItem("Agtoken");
   const isLoggedIn = !!(UsToken || AdToken || AgToken);
-  const handleLogout = () => {
-    sessionStorage.removeItem("Ustoken");
-    sessionStorage.removeItem("Adtoken");
-    sessionStorage.removeItem("Agtoken");
-    navigate("/");
-  };
+  // const handleLogout = () => {
+  //   sessionStorage.removeItem("Ustoken");
+  //   sessionStorage.removeItem("Adtoken");
+  //   sessionStorage.removeItem("Agtoken");
+  //   navigate("/");
+  // };
   console.log("isLoggedIn", isLoggedIn);
   console.log("UsToken", UsToken);
   const [open, setOpen] = useState(false);

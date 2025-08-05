@@ -4,17 +4,15 @@ import {
   Route,
   UNSAFE_ErrorResponseImpl,
 } from "react-router-dom";
-import { useState } from "react";
 import Layout from "./pages/Layout";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { ToastContainer } from "react-toastify";
 import ResetPassword from "./pages/User/UserResetPsw";
-import Landing from "./pages/landing";
+
 import About from "./pages/About";
 import ForgetPassword from "./pages/forgotpassword";
 import CreateNewPassword from "./pages/createnewpass";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import Login from "./pages/login";
 import WatchlistTable from "./pages/watchlist";
@@ -44,8 +42,6 @@ import AgentProfile from "./pages/Agents/agentprofile"; // import agent profile
 // import other agent pages as needed
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <ToastContainer />

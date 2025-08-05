@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useLocation } from "react-router-dom";
-import ListCard from "../../components/ListCard";
 import SkeletonCard from "../../components/SkeletonCard";
 import UploadedPropertyCard from "./UploadedProperties";
-import axios from "axios";
-import { getListing } from "../../Api";
+
 
 import Modal from "react-modal";
 import { toast } from "react-toastify";
@@ -12,15 +9,15 @@ import "./Listing.css";
 import { getUserDetails } from "../../Api/saveDetails";
 import './Mylisting.css'
 import api from "../../Api/Interceptor"; 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
+// function useQuery() {
+//   return new URLSearchParams(useLocation().search);
+// }
 
 export default function Properties() {
-  const query = useQuery();
-  const initialSearch = query.get("search") || "";
+  // const query = useQuery();
+  // const initialSearch = query.get("search") || "";
 
-  const [search, setSearch] = useState(initialSearch);
+  // const [search, setSearch] = useState(initialSearch);
   const [properties, setProperties] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
@@ -73,7 +70,7 @@ useEffect(() => {
 
   fetchAgentId();
 }, [email]);
-
+console.log(setEmail)
   // ✅ Use parsed token
   const token = getUserDetails("Agtoken");
 
@@ -115,7 +112,7 @@ const res = await api.get("/api/Properties", {
     setPage(1);
     setHasMore(true);
     if (agentId) fetchProperties(true);
-  }, [search, agentId]);
+  }, [ agentId]);
 
   useEffect(() => {
     if (page > 1 && agentId) fetchProperties();
@@ -243,7 +240,7 @@ const handlePropertyDelete = (id: number) => {
         </div>
       </Modal>
 <div className="property-upload-list">
-  {properties.map((prop, idx) => (
+  {properties.map((prop) => (
     <UploadedPropertyCard
       key={prop.id}
       property={prop}

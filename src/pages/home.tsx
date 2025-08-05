@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import ListCard from "../components/ListCard";
 import "./home.css";
-import image from "../assets/m.jpeg";
+
 import Landing from "./landing";
 import { getProperties } from "../Api";
 

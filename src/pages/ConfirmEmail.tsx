@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import axios from "axios";
+
 import { resendconfirmemail } from "../Api";
 import api from "../Api/Interceptor";
 const statusIcons: Record<string, React.ReactElement> = {

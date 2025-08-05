@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./landing.css";
-import anotherImage from "../assets/shalev-cohen-KjueSklMNyY-unsplash.jpg"
+
 import myImage from "../assets/a711a9f723195ff37d6eda18462ceee5-phoenix tower billboard 2025.png"
 
 export default function Landing() {
