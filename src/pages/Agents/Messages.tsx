@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Messages.css";
+import "../Agents/Messages.css";
 import { getMessages } from "../../Api"; 
 import { getUserDetails } from "../../Api/saveDetails";
 

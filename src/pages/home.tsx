@@ -1,6 +1,6 @@
 import  { useState, useEffect } from "react";
 import ListCard from "../components/ListCard";
-import "./home.css";
+import "../pages/home.css";
 
 import Landing from "./landing";
 import { getProperties } from "../Api";

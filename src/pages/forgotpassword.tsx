@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from 'react-toastify';
 
-import "./login.css";
+import "../pages/login.css";
 import NavBar from "./navbar";
 
 import axios from "axios";

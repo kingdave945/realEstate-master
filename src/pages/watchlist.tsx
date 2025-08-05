@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { receivedWatchlist } from "../Api";
 import { getUserDetails } from "../Api/saveDetails";
 import NavBar from "./navbar";
-import  './watchlist.css'
+import  '../pages/watchlist.css'
 import { deleteWatchlist } from "../Api";
 import{toast} from 'react-toastify'
 interface Property {

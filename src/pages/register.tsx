@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { register } from "../Api";
-import "./register.css";
+import "../pages/register.css";
 import { toast } from 'react-toastify';
 import api from "../Api/Interceptor";
 

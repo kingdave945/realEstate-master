@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import "../pages/login.css";
 
 import { loginAdmin, loginAgent, loginUser } from "../Api";
 

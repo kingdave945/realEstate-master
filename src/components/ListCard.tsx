@@ -1,4 +1,4 @@
-import "./ListCard.css";
+import '../components/ListCard.css'
 import { useNavigate } from "react-router-dom";
 import { getUserDetails } from "../Api/saveDetails";
 import { addToWatchlist } from "../Api";

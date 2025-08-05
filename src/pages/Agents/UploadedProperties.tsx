@@ -1,5 +1,5 @@
 import { deleteProperty } from "../../Api";
-import "./UploadedPropertyCard.css"; 
+import "../Agents/UploadedPropertyCard.css"; 
 import {toast} from 'react-toastify'
 export default function UploadedPropertyCard({ property , onDelete}: { property: any; onDelete: (id: number) => void }) {
 

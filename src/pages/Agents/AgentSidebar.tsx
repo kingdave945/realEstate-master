@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./AgentSidebar.css";
+import '../Agents/AgentSidebar.css'
 
 const sidebarItems = [
   { label: "Dashboard", icon: "", path: "/agent" },

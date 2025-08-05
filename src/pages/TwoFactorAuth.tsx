@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TwoFAVerification } from "../Api/index";
-import "./TwoFactrAuth.css"; // Assuming you have a CSS file for styles
+import "../pages/TwoFactrAuth.css"; // Assuming you have a CSS file for styles
 export default function TwoFactorAuth() {
   const navigate = useNavigate();
   const email = sessionStorage.getItem("email") || "";

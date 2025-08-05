@@ -4,7 +4,7 @@ import ListCard from "../../components/ListCard";
 import image1 from "../../assets/licensed-image.jpg";
 import image2 from "../../assets/licensed-image (1).jpg";
 
-import "./Dashboard.css";
+import "../Agents/Dashboard.css";
 
 
 

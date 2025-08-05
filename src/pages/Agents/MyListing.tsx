@@ -5,9 +5,8 @@ import UploadedPropertyCard from "./UploadedProperties";
 
 import Modal from "react-modal";
 import { toast } from "react-toastify";
-import "./Listing.css";
+import "../Agents/Listing.css";
 import { getUserDetails } from "../../Api/saveDetails";
-import './Mylisting.css'
 import api from "../../Api/Interceptor"; 
 // function useQuery() {
 //   return new URLSearchParams(useLocation().search);

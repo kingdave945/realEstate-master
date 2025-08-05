@@ -1,5 +1,5 @@
 import { Outlet} from "react-router-dom";
-import "./Layout.css"
+import ".,/pages/Layout.css"
 import { useState,useEffect } from "react";
 import NavBar from "./navbar"
 import NavBarII from "./navbarII";
