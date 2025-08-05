@@ -1,5 +1,5 @@
 
-import "../pages/Admin.css";
+import "../Admin/Admin.css";
 
 const stats = {
   totalListings: 42,
